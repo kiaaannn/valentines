@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Valentines</title>
+    <link rel="icon" type="image/x-icon" href="pics/icons8-gift-64.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>To My Long Awaited Person ❤️</h1>
+        
+        <div class="envelope-container" id="envelopeContainer">
+            <div class="envelope"></div>
+            <div class="envelope-flap"></div>
+            <div class="heart">❤️</div>
+        </div>
+
+        <div class="letter" id="letter">
+            <div class="letter-content">
+                <h2>hiii!!</h2>
+                <p>medyo sad na hindi tayo magkikita :(( pero go marami pang ganito HAHAHAHAHAH</p>
+                <p>im very happy na dumating na yung valentines na im officially with u (OA HAHAHHAHAHA). pero hindi man lang ako makapagbigay ng flowers kasi makikita dyan sa inyo, mapagalitan ka pa?? ano ba naman tong valentines na i2 eme.</p>
+                <p>so i just made this.. for our first valentines :P</p>
+
+                <div class="valentine-question">
+                    <h2>Will you be my Valentine?</h2>
+                    <div class="buttons">
+                        <button class="btn yes-btn" id="yesBtn">Yes</button>
+                        <button class="btn no-btn" id="noBtn">No</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="response-message sad-message" id="sadMessage">
+            <h3>Hindi na nga tayo magkikita eh :((</h3>
+            
+            <div class="image-container">
+                <div class="memory-image" id="memoryImage">
+                    <div class="tenor-gif-embed" data-postid="26865135" data-share-method="host" data-aspect-ratio="1.07744" data-width="100%">
+                        <a href="https://tenor.com/view/peach-goma-peach-and-goma-peach-peach-cat-sparkle-gif-26865135">Peach Goma Peach And Goma Sticker</a> from 
+                        <a href="https://tenor.com/search/peach+goma-stickers">Peach Goma Stickers</a>
+                    </div> 
+                    <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+                    <p class="cat-caption">Please! 🥺❤️</p>
+                </div>
+            </div>
+
+            <div class="second-question">
+                <div class="buttons">
+                    <button class="btn second-yes-btn" id="secondYesBtn">Yes</button>
+                    <button class="btn second-no-btn" id="secondNoBtn">No</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="response-message joke-message" id="jokeMessage">
+            <h3>Lah ayaw niya talaga</h3>
+            <p>Wala ka ng choice, isa nalang to</p>
+            <button class="btn final-yes-btn" id="finalYesBtn">Yes</button>
+        </div>
+        
+        <div class="yes-popup" id="yesPopup">
+            <div class="yes-popup-content">
+                <div class="memory-image" id="memoryImage">
+                    <div class="tenor-gif-embed" data-postid="26865258" data-share-method="host" data-aspect-ratio="1.07744" data-width="100%">
+                        <a href="https://tenor.com/view/peach-goma-peach-and-goma-peach-peach-cat-yay-gif-26865258">Peach Goma Peach And Goma Sticker</a>from 
+                        <a href="https://tenor.com/search/peach+goma-stickers">Peach Goma Stickers</a>
+                    </div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+                    <p class="cat-caption">Yay!</p>
+                </div>
+                
+
+                <div class="popup-flowers">
+                    <div class="popup-flower">🌹</div>
+                    <div class="popup-flower">🌸</div>
+                    <div class="popup-flower">🌷</div>
+                    <div class="popup-flower">💐</div>
+                </div>
+                
+                <button class="btn continue-btn" id="continueBtn">Continue</button>
+            </div>
+        </div>
+        
+        <div class="flowers-letter" id="flowersLetter">
+            <div class="flowers flower-1">🌹</div>
+            <div class="flowers flower-2">🌸</div>
+            <div class="flowers flower-3">💐</div>
+            <div class="flowers flower-4">🌷</div>
+            
+            <h2>Happy Valentines!!</h2>
+            <p style="color: red;">--------------------------</p>
+            
+            <div class="gifts-container">
+                <div class="gift" id="gift1" data-gift-type="song">
+                    <div class="gift-icon">🎵</div>
+                </div>
+                
+                <div class="gift" id="gift2" data-gift-type="photo">
+                    <div class="gift-icon">📸</div>
+                </div>
+                
+                <div class="gift" id="gift3" data-gift-type="gift-photo">
+                    <div class="gift-icon">💌</div>
+                </div>
+            </div>
+            
+            <div class="gift-modal" id="songModal">
+                <div class="modal-content">
+                    <span class="close-modal">&times;</span>
+                    <h3>Song</h3>
+                    
+                    <div class="song-player" id="songPlayer">
+                        <div class="valentine-music-player">
+                            <div class="player-header">
+                                <div class="heart-icon">❤️</div>
+                                <div class="track-info">
+                                    <h3>The Ridleys - Love Is</h3>
+                                    <p class="track-subtitle">Starts at 0:55</p>
+                                </div>
+                                <div class="heart-icon">❤️</div>
+                            </div>
+                            
+                            <audio id="loveSong" preload="auto" loop>
+                                <source src="The Ridleys - Love is.mp4" type="audio/mp4">
+                            </audio>
+                            
+                            <div class="player-controls">
+                                <button id="playBtn" class="play-button">
+                                    <span class="play-icon">▶</span>
+                                    <span class="play-text">Play</span>
+                                </button>
+                            </div>
+                            
+                            <div class="progress-container">
+                                <div class="progress-bar" id="progressBar"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="placeholder-song">
+                            <p>We'll eventually find out how to do this our own way, so let's have the most fun with it.</p>
+                        </div>
+                    </div>
+                    
+                    <p class="song-message">I'd love to figure love out with you.</p>
+                </div>
+            </div>
+            
+            <div class="gift-modal" id="photoModal">
+                <div class="modal-content">
+                    <span class="close-modal">&times;</span>
+                    <h3>Photo</h3>
+                    
+                    <div class="photo-container" id="photoContainer">
+                        <div class="placeholder-photo">
+                            <div class="photo-frame">
+                                <div class="photo-placeholder">
+                                    <img src="pics/5.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p class="photo-message">picture dapat natin to together pero wala pa eh :(( <br> kaya itong super pretty picture mo nalang.</p>
+                </div>
+            </div>
+            
+            <div class="gift-modal" id="giftPhotoModal">
+                <div class="modal-content">
+                    <span class="close-modal">&times;</span>
+                    <h3>Short Letter</h3>
+                    
+                    <div class="personal-note" id="personalNote">
+                        <div class="placeholder-note">
+                            <h4>To my dearest, Lana</h4>
+                            <p>I just want to say na I'm happy that you became an exclusive part of my life.</p>
+                            <p>I know there are a lot of problems that comes with you being in a relationship, and despite feeling guilty sometimes, I'm still grateful na you didn't give up.</p>
+                            <p>There are still a lot of things I should improve on when it comes to being a boyfriend, but I hope you forgive me for everything I lack.</p>
+                            <p>I'll learn how to do this someday, for now, please bear with me.</p>
+                            <p class="signature">- cian</p>
+                            <p class="note-instructions">💌💌💌</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="soft-flowers-popup" id="softFlowers">
+                <div class="soft-flowers-content">
+                    <span class="close-soft-flowers">&times;</span>
+                    
+                    <h3 class="flowers-title">Thank you for being my valentine.</h3>
+                    
+                    <div class="soft-flowers-bouquet">
+                        <div class="soft-flower soft-rose">🌹</div>
+                        <div class="soft-flower soft-tulip">🌷</div>
+                        <div class="soft-flower soft-blossom">🌸</div>
+                        <div class="soft-flower soft-cherry">🌸</div>
+                        <div class="soft-flower soft-bouquet">💐</div>
+                        <div class="soft-flower soft-pink">🌸</div>
+                        <div class="soft-flower soft-rose2">🌹</div>
+                        <div class="soft-flower soft-tulip2">🌷</div>
+                        
+                        <div class="soft-sparkle soft-sparkle-1">✨</div>
+                        <div class="soft-sparkle soft-sparkle-2">✨</div>
+                        <div class="soft-sparkle soft-sparkle-3">✨</div>
+                    </div>
+                    
+                    <div class="soft-flowers-footer">
+                        <p class="thank-you-text">I Love You! <br> q(≧▽≦q)</p>
+                    </div>
+                    
+                    <button class="btn soft-flowers-close-btn" id="softFlowersCloseBtn">Close</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>-- Lana --</p>
+            <button class="btn view-flowers-again-btn" id="viewFlowersAgainBtn" style="display: none;">
+                <span class="flower-icon">🌸</span> View Flowers Again
+            </button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
